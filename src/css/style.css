@@ -25,7 +25,7 @@ html {
 body {
 	position: relative;
 	margin: 0;
-	background-color: white;
+	background-color: #b4b7cc;
 	color: var(--page-font-color);
 
 	font-family: var(--page-font);

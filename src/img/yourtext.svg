@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.164" height="12.834" viewBox="0 0 47.164 12.834">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #3d2875;
+      }
+
+      .cls-2 {
+        font-size: 6.574px;
+        font-family: Montserrat-ExtraBold, Montserrat;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        font-family: Montserrat-Italic, Montserrat;
+        font-weight: 400;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <g id="Group_12" data-name="Group 12" transform="translate(-66.791 -137.689)">
+    <g id="Group_11" data-name="Group 11">
+      <g id="Group_10" data-name="Group 10">
+        <path id="Path_1" data-name="Path 1" class="cls-1" d="M77.536,141.81v6.033a.789.789,0,0,1-.789.789H70.4a.789.789,0,0,0-.789.789v.313a.789.789,0,0,0,.789.789H78.72a.789.789,0,0,0,.789-.789V141.81a.789.789,0,0,0-.789-.789h0C78.284,141.021,77.5,141.021,77.536,141.81Z"/>
+        <path id="Rectangle_9" data-name="Rectangle 9" class="cls-1" d="M1.207,0H8.3A1.206,1.206,0,0,1,9.5,1.206V8.3A1.206,1.206,0,0,1,8.3,9.5H1.207A1.207,1.207,0,0,1,0,8.3V1.207A1.207,1.207,0,0,1,1.207,0Z" transform="translate(66.791 137.689)"/>
+      </g>
+    </g>
+    <text id="yourtext" class="cls-2" transform="translate(84.954 145.771)"><tspan x="0" y="0">your</tspan><tspan class="cls-3" y="0">text</tspan></text>
+  </g>
+</svg>
