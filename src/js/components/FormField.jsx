@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classes from './FormField.module.css';
 
-export default function FormField({ label, name, type, width, ...restProps }) {
+export default function FormField(props) {
+	const { label, name, type, width, ...restProps } = props;
 	return (
-		<div className="formField">
-			<label className={`fieldLabel ${width}`} htmlFor={name}>
+		<div className={`${classes.container} ${classes[width]}`}>
+			<label className={classes.label} htmlFor={name}>
 				{label}
 			</label>
-			<input className="fieldInput" id={name} type={type} {...restProps} />
+			<input className={classes.input} id={name} type={type} {...restProps} />
 		</div>
 	);
 }

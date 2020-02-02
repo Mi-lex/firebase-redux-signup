@@ -54,3 +54,43 @@ img {
 
 	white-space: nowrap;
 }
+
+.flex {
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.page-container {
+	overflow: hidden;
+	width: 90%;
+	max-width: 850px;
+	height: 90vh;
+	max-height: 550px;
+	margin: 0 auto;
+	background-color: #f8f9fb;
+	border-radius: 2px;
+}
+
+.page-wrapper {
+	height: 100vh;
+	align-items: center;
+}
+
+@keyframes :global(desappear) {
+	0% {
+		opacity: 1;
+		transform: rotateX(90deg);
+	}
+	50% {
+		opacity: 0.5;
+		transform: rotateX(0deg);
+	}
+	100% {
+		opacity: 0;
+		transform: rotateX(90deg);
+		visibility: hidden;
+	}
+}
