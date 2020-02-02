@@ -6,6 +6,7 @@ const postcssPresetEnv = require('postcss-preset-env');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
 
 const OUTPUT_FOLDER = 'docs';
 const ENTRY_FOLDER = 'src';
@@ -85,6 +86,14 @@ const config = {
 				exclude: /\.module\.css$/,
 				loader: getStyleLoaders({ importLoaders: 2 }),
 				sideEffects: true,
+			},
+			{
+				test: /\.module\.css$/,
+				use: getStyleLoaders({
+					importLoaders: 2,
+					modules: true,
+					getLocalIdent: getCSSModuleLocalIdent,
+				}),
 			},
 			{
 				test: /\.eot|ttf|woff2?$/,
