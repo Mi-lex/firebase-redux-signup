@@ -145,10 +145,9 @@ const config = {
 		}),
 	],
 
-	optimization: {
-		minimizer: [],
-	},
+	optimization: {},
 };
+
 module.exports = (env, argv) => {
 	if (argv.mode === 'production') {
 		// Plagins
@@ -165,12 +164,7 @@ module.exports = (env, argv) => {
 			}),
 		);
 
-		// Minimizing
-		config.optimization.minimizer.push();
-
-		config.optimization = {
-			minimizer: [new UglifyJsPlugin()],
-		};
+		config.optimization.minimize = true;
 	}
 
 	return config;
