@@ -1,18 +1,14 @@
 import { put, takeEvery, call } from 'redux-saga/effects';
 import rsFirebase from '../../rsFirebase';
-import actions, { registerUserError } from './actions';
+import actions from './actions';
 import types from './consts';
 
 export function* registerUser(action) {
 	try {
-		const snapshot = yield call(
-			rsFirebase.firestore.getDocument,
-			'users/ksBjK7zqbTFlwat96RTt',
-		);
-
+		yield call(rsFirebase.firestore.addDocument, 'users', action.payload);
 		yield put(actions.registerUserSuccess());
 	} catch (err) {
-		yield put(actions.registerUserError(err));
+		yield put(actions.registerUserError(err.message));
 	}
 }
 
@@ -20,8 +16,4 @@ export function* watchRegisterUserAsync() {
 	yield takeEvery(types.REGISTER_REQUEST, registerUser);
 }
 
-export function* watchRegisterUserErrorAsync() {
-	yield takeEvery(types.REGISTER_ERROR, registerUserError);
-}
-
-export default [watchRegisterUserAsync, watchRegisterUserErrorAsync];
+export default [watchRegisterUserAsync];

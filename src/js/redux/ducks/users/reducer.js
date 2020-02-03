@@ -12,6 +12,7 @@ const users = (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				loading: true,
+				error: null,
 			};
 		case types.REGISTER_SUCCESS:
 			return {
