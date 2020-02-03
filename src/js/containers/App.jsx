@@ -1,5 +1,5 @@
 import React from 'react';
-import RegisterUserForm from '../components/RegisterUserForm';
+import RegisterUserForm from './RegisterUserForm';
 
 export default function App() {
 	return (

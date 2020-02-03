@@ -9,7 +9,7 @@ export default function FormField(props) {
 			<label className={classes.label} htmlFor={name}>
 				{label}
 			</label>
-			<input className={classes.input} id={name} type={type} {...restProps} />
+			<input name={name} className={classes.input} id={name} type={type} {...restProps} />
 		</div>
 	);
 }

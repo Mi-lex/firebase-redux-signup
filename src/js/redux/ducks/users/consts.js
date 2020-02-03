@@ -1,0 +1,9 @@
+const REGISTER_REQUEST = 'firebase/users/REGISTER_REQUEST';
+const REGISTER_ERROR = 'firebase/users/REGISTER_ERROR';
+const REGISTER_SUCCESS = 'firebase/users/REGISTER_SUCCESS';
+
+export default {
+	REGISTER_REQUEST,
+	REGISTER_SUCCESS,
+	REGISTER_ERROR,
+};
