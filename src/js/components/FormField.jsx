@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classes from './FormField.module.css';
+import classes from '../../css/components/FormField.module.css';
 
 export default function FormField(props) {
 	const {
