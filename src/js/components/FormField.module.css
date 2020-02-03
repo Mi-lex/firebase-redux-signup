@@ -1,4 +1,5 @@
 .container {
+	position: relative;
 	margin-bottom: 1.5rem;
 }
 
@@ -31,4 +32,13 @@
 .input:focus {
     border-bottom-color: #3a3759;
 	outline: none;
+}
+
+.container span {
+	position: absolute;
+	bottom: -13px;
+	left: 5px;
+	color: red;
+	font-style: italic;
+	font-size: 7px;
 }

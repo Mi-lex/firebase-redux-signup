@@ -49,17 +49,13 @@
 	padding: 0;
 	width: 45%;
 	height: 100%;
-	transition: all 1s linear;
+	transition: all 1s ease-in;
 }
 
 @keyframes dissappear {
 	0% {
 		opacity: 1;
-		transform: rotateX(90deg);
-	}
-	50% {
-		opacity: 0.5;
-		transform: rotateX(0deg);
+		transform: rotateX(0);
 	}
 	100% {
 		opacity: 0;
@@ -69,7 +65,7 @@
 }
 
 .success .container {
-	animation-duration: 2000ms;
+	animation-duration: 800ms;
 	animation-fill-mode: forwards;
 	animation-name: dissappear;
 }
@@ -83,7 +79,7 @@
 	height: 100vh;
 	overflow: hidden;
 	vertical-align: middle;
-	background-color: #1D1F38;
+	background-color: #1d1f38;
 }
 
 .success .img {

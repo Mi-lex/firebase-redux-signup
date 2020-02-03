@@ -1,6 +1,7 @@
 import types from './consts';
 
 const INITIAL_STATE = {
+	registerSuccess: false,
 	error: null,
 	loading: false,
 };
@@ -15,6 +16,7 @@ const users = (state = INITIAL_STATE, action) => {
 		case types.REGISTER_SUCCESS:
 			return {
 				...state,
+				registerSuccess: true,
 				loading: false,
 			};
 		case types.REGISTER_ERROR:
